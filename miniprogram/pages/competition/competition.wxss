@@ -1,0 +1,56 @@
+.tui-list-head {
+  height: 80rpx;
+  background-color: #eee;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+}
+.tui-list-head text {
+  font-size: 22rpx;
+}
+.tui-gallery-list{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15rpx;
+  margin: 15rpx auto;
+  border-bottom: 1px solid #ccc;
+  width: 700rpx;
+  height: 140rpx;
+}
+.gallery-img{
+  width: 150rpx;
+  height: 120rpx;
+  flex: 0 0 auto;
+}
+.gallery-box{
+  height: 120rpx;
+  overflow: hidden;
+  position: absolute;
+}
+.gallery-name{
+  position: relative;
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  overflow: hidden;
+  font-size: 35rpx;
+  width: 700rpx;
+  margin-top: 15rpx;
+  word-break: break-all;
+  left: 150rpx;
+  /* margin-left: 20rpx; */
+}
+.gallery-detail{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #8f8f94;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 5rpx;
+}
+.gallery-left{padding-left: 10px;}
+.gallery-right{padding-right: 10px;}

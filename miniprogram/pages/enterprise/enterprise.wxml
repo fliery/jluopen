@@ -1,0 +1,36 @@
+<!--miniprogram/pages/enterprise/enterprise.wxml-->
+<!-- 热门企业 -->
+<view class="container">
+
+  <view class="uploader">
+    <navigator url="../enterprise1/enterprise1" open-type="navigate" class="uploader-text">
+      <text wx:if="{{name1}}">{{name1}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise2/enterprise1" open-type="navigate" class="uploader-text">
+      <text wx:if="{{name2}}">{{name2}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise3/enterprise1" open-type="navigate" class="uploader-text">
+      <text wx:if="{{name3}}">{{name3}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise4/enterprise1" open-type="navigate" class="uploader-text">
+      <text wx:if="{{name4}}">{{name4}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise5/enterprise1" open-type="navigate" class="uploader-text">
+      <text wx:if="{{name5}}">{{name5}}</text>
+    </navigator>
+  </view>
+
+
+</view>

@@ -1,0 +1,7 @@
+/* miniprogram/pages/help/help.wxss */
+page {
+  background:rgb(196, 230, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

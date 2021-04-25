@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+ 
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+
+
+     <view class="title1">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="title1-text"> 点击立即授权 </button> 
+    </view>
+    
+
+
+    </block>
+    <block wx:else>
+      <button bindtap="gofirst" class="title1-text"> 点击欢迎进入 </button> 
+    </block>
+  
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="wave" src="../../images/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="../../images/wave.png" mode="aspectFill"></image>
+      </view>
+    </view>
+  
+</view>

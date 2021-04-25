@@ -1,0 +1,19 @@
+<!--miniprogram/pages/competition/competition.wxml-->
+<view>
+		<view class="tui-list-box">
+			
+		  <view class="tui-list-head">大赛信息
+        <text>(点击可复制官网链接)</text>
+      </view>
+		  <!-- wx:for="{{galleryList}}" wx:key="navList3" -->
+		  <view class="tui-gallery-list tui-youjiantou" wx:for="{{arr}}"  wx:key="id" bindtap='copyText' data-text="{{item.contents}}">
+		    <image class="gallery-img" src="{{item.image}}"></image>
+		    <view  class="gallery-box gallery-left gallery-right">
+		       <text class="gallery-name">{{item.title}}</text>
+		       <!-- <text class="gallery-detail">{{item.detail}}</text> -->
+		    </view>
+		  </view>
+		  
+		</view>
+		
+	</view>

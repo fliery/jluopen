@@ -1,0 +1,206 @@
+<!--miniprogram/pages/engagement/engagement.wxml-->
+<!-- 招聘信息 -->
+<view class="container">
+  <!-- 导航条 -->
+  <view class="uploader11">
+    <navigator url="" open-type="navigate" class="uploader-text11">
+      <text bindtap="oneStep" class="uploader-text11">国企</text>
+    </navigator>
+    <navigator url="" open-type="navigate" class="uploader-text11">
+      <text bindtap="twoStep" class="uploader-text11">民企</text>
+    </navigator>
+    <navigator url="" open-type="navigate" class="uploader-text11">
+      <text bindtap="threeStep" class="uploader-text11">外企</text>
+    </navigator>
+    <!-- <text bindtap="oneStep" class="uploader-text11">国企</text>
+    <text bindtap="twoStep" class="uploader-text11">民企</text>
+    <text bindtap="threeStep" class="uploader-text11">外企</text> -->
+  </view>
+  <!-- <view class="guide">
+    <div class="nav">
+      <button class="prev" size="mini" type="default" bindtap="oneStep">国企</button>
+      <button class="prev" size="mini" type="default" bindtap="twoStep">民企</button>
+      <button class="next" size="mini" type="default" bindtap="threeStep">外企</button>
+    </div>
+  </view> -->
+  <!-- 国企 -->
+  <view class="uploader" wx:if="{{step === 1}}">
+    <view class="uploader-container1" wx:if="{{name1}}">
+      <text bindtap='copyText' data-text="{{href1}}" class="uploader-text1" wx:if="{{name1}}">{{name1}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl1}}">
+      <image bindtap='copyText' data-text="{{href1}}" class="uploader-image" src="{{imgUrl1}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name2}}">
+      <text bindtap='copyText' data-text="{{href2}}" class="uploader-text1" wx:if="{{name2}}">{{name2}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl2}}">
+      <image bindtap='copyText' data-text="{{href2}}" class="uploader-image" src="{{imgUrl2}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name3}}">
+      <text bindtap='copyText' data-text="{{href3}}" class="uploader-text1" wx:if="{{name3}}">{{name3}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl3}}">
+      <image bindtap='copyText' data-text="{{href3}}" class="uploader-image" src="{{imgUrl3}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name4}}">
+      <text bindtap='copyText' data-text="{{href4}}" class="uploader-text1" wx:if="{{name4}}">{{name4}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl4}}">
+      <image bindtap='copyText' data-text="{{href4}}" class="uploader-image" src="{{imgUrl4}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name5}}">
+      <text bindtap='copyText' data-text="{{href5}}" class="uploader-text1" wx:if="{{name5}}">{{name5}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl5}}">
+      <image bindtap='copyText' data-text="{{href5}}" class="uploader-image" src="{{imgUrl5}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name6}}">
+      <text bindtap='copyText' data-text="{{href6}}" class="uploader-text1" wx:if="{{name6}}">{{name6}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl6}}">
+      <image bindtap='copyText' data-text="{{href6}}" class="uploader-image" src="{{imgUrl6}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name7}}">
+      <text bindtap='copyText' data-text="{{href7}}" class="uploader-text1" wx:if="{{name7}}">{{name7}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl7}}">
+      <image bindtap='copyText' data-text="{{href7}}" class="uploader-image" src="{{imgUrl7}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name8}}">
+      <text bindtap='copyText' data-text="{{href8}}" class="uploader-text1" wx:if="{{name8}}">{{name8}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl8}}">
+      <image bindtap='copyText' data-text="{{href8}}" class="uploader-image" src="{{imgUrl8}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name9}}">
+      <text bindtap='copyText' data-text="{{href9}}" class="uploader-text1" wx:if="{{name9}}">{{name9}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl9}}">
+      <image bindtap='copyText' data-text="{{href9}}" class="uploader-image" src="{{imgUrl9}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name10}}">
+      <text bindtap='copyText' data-text="{{href10}}" class="uploader-text1" wx:if="{{name10}}">{{name10}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl10}}">
+      <image bindtap='copyText' data-text="{{href10}}" class="uploader-image" src="{{imgUrl10}}" ></image>
+    </view>
+  </view>
+
+  <!-- 民企 -->
+  <view class="uploader" wx:if="{{step === 2}}">
+    <view class="uploader-container1" wx:if="{{name1}}">
+      <text bindtap='copyText' data-text="{{href1}}" class="uploader-text1" wx:if="{{name1}}">{{name1}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl1}}">
+      <image bindtap='copyText' data-text="{{href1}}" class="uploader-image" src="{{imgUrl1}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name2}}">
+      <text bindtap='copyText' data-text="{{href2}}" class="uploader-text1" wx:if="{{name2}}">{{name2}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl2}}">
+      <image bindtap='copyText' data-text="{{href2}}" class="uploader-image" src="{{imgUrl2}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name3}}">
+      <text bindtap='copyText' data-text="{{href3}}" class="uploader-text1" wx:if="{{name3}}">{{name3}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl3}}">
+      <image bindtap='copyText' data-text="{{href3}}" class="uploader-image" src="{{imgUrl3}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name4}}">
+      <text bindtap='copyText' data-text="{{href4}}" class="uploader-text1" wx:if="{{name4}}">{{name4}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl4}}">
+      <image bindtap='copyText' data-text="{{href4}}" class="uploader-image" src="{{imgUrl4}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name5}}">
+      <text bindtap='copyText' data-text="{{href5}}" class="uploader-text1" wx:if="{{name5}}">{{name5}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl5}}">
+      <image bindtap='copyText' data-text="{{href5}}" class="uploader-image" src="{{imgUrl5}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name6}}">
+      <text bindtap='copyText' data-text="{{href6}}" class="uploader-text1" wx:if="{{name6}}">{{name6}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl6}}">
+      <image bindtap='copyText' data-text="{{href6}}" class="uploader-image" src="{{imgUrl6}}" ></image>
+    </view>
+    <view class="uploader-container1" wx:if="{{name7}}">
+      <text bindtap='copyText' data-text="{{href7}}" class="uploader-text1" wx:if="{{name7}}">{{name7}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl7}}">
+      <image bindtap='copyText' data-text="{{href7}}" class="uploader-image" src="{{imgUrl7}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name8}}">
+      <text bindtap='copyText' data-text="{{href8}}" class="uploader-text1" wx:if="{{name8}}">{{name8}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl8}}">
+      <image bindtap='copyText' data-text="{{href8}}" class="uploader-image" src="{{imgUrl8}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name9}}">
+      <text bindtap='copyText' data-text="{{href9}}" class="uploader-text1" wx:if="{{name9}}">{{name9}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl9}}">
+      <image bindtap='copyText' data-text="{{href9}}" class="uploader-image" src="{{imgUrl9}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name10}}">
+      <text bindtap='copyText' data-text="{{href10}}" class="uploader-text1" wx:if="{{name10}}">{{name10}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl10}}">
+      <image bindtap='copyText' data-text="{{href10}}" class="uploader-image" src="{{imgUrl10}}" ></image>
+    </view>
+  </view>
+
+  <!-- 外企 -->
+  <view class="uploader" wx:if="{{step === 3}}">
+    <view class="uploader-container1" wx:if="{{name1}}">
+      <text bindtap='copyText' data-text="{{href1}}" class="uploader-text1" wx:if="{{name1}}">{{name1}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl1}}">
+      <image bindtap='copyText' data-text="{{href1}}" class="uploader-image" src="{{imgUrl1}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name2}}">
+      <text bindtap='copyText' data-text="{{href2}}" class="uploader-text1" wx:if="{{name2}}">{{name2}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl2}}">
+      <image bindtap='copyText' data-text="{{href2}}" class="uploader-image" src="{{imgUrl2}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name3}}">
+      <text bindtap='copyText' data-text="{{href3}}" class="uploader-text1" wx:if="{{name3}}">{{name3}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl3}}">
+      <image bindtap='copyText' data-text="{{href3}}" class="uploader-image" src="{{imgUrl3}}" ></image>
+    </view>
+
+    <view class="uploader-container1" wx:if="{{name4}}">
+      <text bindtap='copyText' data-text="{{href4}}" class="uploader-text1" wx:if="{{name4}}">{{name4}}</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl4}}">
+      <image bindtap='copyText' data-text="{{href4}}" class="uploader-image" src="{{imgUrl4}}" ></image>
+    </view>
+
+    </view>
+
+
+
+
+</view>

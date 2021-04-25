@@ -1,0 +1,42 @@
+<!--miniprogram/pages/first/first.wxml-->
+<view class="container">
+
+  <!-- 导航条 -->
+  <view class="uploader">
+    <navigator url="../enterprise/enterprise" open-type="navigate" class="uploader-text">
+      <text>热门企业</text>
+    </navigator>
+    <navigator url="../engagement/engagement" open-type="navigate" class="uploader-text">
+      <text>招聘信息</text>
+    </navigator>
+    <navigator url="../competition/competition" open-type="navigate" class="uploader-text">
+      <text>大赛推荐</text>
+    </navigator>
+  </view>
+
+  <swiper class="slider" circular="true" autoplay="true" indicator-dots="true"	>
+	    <swiper-item bindtap="changeurl1">
+	      <image src="../../images/1.jpg" ></image>
+	    </swiper-item>
+	    <swiper-item bindtap="changeurl2">
+	      <image src="../../images/2.jpg" ></image>
+	    </swiper-item>
+	    <swiper-item bindtap="changeurl3">
+	      <image src="../../images/3.jpg" ></image>
+	    </swiper-item>
+      <swiper-item bindtap="changeurl4">
+	      <image src="../../images/4.jpg" ></image>
+	    </swiper-item>
+	    <swiper-item bindtap="changeurl5">
+	      <image src="../../images/5.jpg" ></image>
+	    </swiper-item>
+	</swiper>
+    
+	<view class="uploader1">
+		<view class="titlec">词云图</view>
+	</view>
+	<view class="uploader2">
+		<image src="../../images/ciyun.png"></image>
+	</view>
+
+</view>

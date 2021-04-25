@@ -1,0 +1,19 @@
+<!--miniprogram/pages/discuss/discuss.wxml-->
+<!-- <view class="container">
+ <view class="tt">
+  <button open-type="contact">进入客服互动</button> 
+  <text class="uploader-text"> </text>
+  </view>
+</view> -->
+
+<view class="container">
+  <view class="title1">
+    <button open-type="contact" class="title1-text">点击进入互动</button>
+  </view>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="wave" src="../../images/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="../../images/wave.png" mode="aspectFill"></image>
+      </view>
+    </view>
+</view>

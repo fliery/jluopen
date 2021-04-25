@@ -1,0 +1,24 @@
+<!--miniprogram/pages/enterprise11/enterprise11.wxml-->
+<view class="container">
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobid11}}">{{jobid11}}.  {{jobname11}}</text>
+  </view>
+  <view class="uploader">
+    <text class="uploader-text1">岗位职责</text>
+  </view>
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobduty11}}">{{jobduty11}}</text>
+  </view>
+
+  <view class="uploader">
+    <text class="uploader-text1">岗位要求</text>
+  </view>
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobask11}}">{{jobask11}}</text>
+  </view>
+
+
+</view>

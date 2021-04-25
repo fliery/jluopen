@@ -1,0 +1,89 @@
+<!--miniprogram/pages/enterprise1/enterprise1.wxml-->
+<!-- 斗鱼直播公司 -->
+<view class="container" wx:if="{{step === 1}}">
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company1"  wx:if="{{ep11}}">{{ep11}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company2" wx:if="{{ep12}}">{{ep12}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company3" wx:if="{{ep13}}">{{ep13}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company4" wx:if="{{ep14}}">{{ep14}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company5" wx:if="{{ep15}}">{{ep15}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company6" wx:if="{{ep16}}">{{ep16}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company7" wx:if="{{ep17}}">{{ep17}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company8" wx:if="{{ep18}}">{{ep18}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company9" wx:if="{{ep19}}">{{ep19}}</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../enterprise11/enterprise11" open-type="navigate" class="uploader-text">
+      <text bindtap="company10" wx:if="{{ep110}}">{{ep110}}</text>
+    </navigator>
+  </view>
+</view>
+
+<!-- 斗鱼直播子页面 -->
+<!-- <view class="container" wx:if="{{step === 2}}">
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobid}}">{{jobid}}.  {{jobname}}</text>
+  </view>
+  <view class="uploader">
+    <text class="uploader-text1">岗位职责</text>
+  </view>
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobduty}}">{{jobduty}}</text>
+  </view>
+
+  <view class="uploader">
+    <text class="uploader-text1">岗位要求</text>
+  </view>
+
+  <view class="uploader">
+      <text class="uploader-text1" wx:if="{{jobask}}">{{jobask}}</text>
+  </view>
+
+
+</view> -->

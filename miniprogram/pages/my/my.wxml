@@ -1,0 +1,17 @@
+<!--miniprogram/pages/my/my.wxml-->
+<view class="container">
+  <view class="title1">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="title1-text">{{userInfo.nickName}}</text>
+    
+  </view>
+  <view class="title1">
+    <button bindtap="gohelp"  class="title2-text">计院通帮助</button>
+  </view>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="wave" src="../../images/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="../../images/wave.png" mode="aspectFill"></image>
+      </view>
+    </view>
+</view>

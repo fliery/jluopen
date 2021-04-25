@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/first/first",
+    "pages/discuss/discuss",
+    "pages/my/my",
+    "pages/enterprise/enterprise",
+    "pages/engagement/engagement",
+    "pages/competition/competition",
+    "pages/enterprise1/enterprise1",
+    "pages/enterprise11/enterprise11",
+    "pages/enterprise2/enterprise1",
+    "pages/enterprise3/enterprise1",
+    "pages/enterprise4/enterprise1",
+    "pages/enterprise5/enterprise1",
+    "pages/help/help"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "计院通——首页",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/bottom11.png",
+        "iconPath": "images/bottom1.png",
+        "pagePath": "pages/first/first",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/bottom22.png",
+        "iconPath": "images/bottom2.png",
+        "pagePath": "pages/discuss/discuss",
+        "text": "互动区"
+      },
+      {
+        "selectedIconPath": "images/bottom33.png",
+        "iconPath": "images/bottom3.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
+  }
+}
